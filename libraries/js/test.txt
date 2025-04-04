@@ -1,0 +1,42 @@
+	var historyStack = [];
+	function manageHistory(newUrl){
+		if(!Array.isArray(historyStack)){
+			historyStack = [];
+		}
+		historyStack = historyStack.filter(function(url){
+			return url !== newUrl;
+		});
+		historyStack.push(newUrl);
+		history.pushState(null, '', newUrl);
+	}
+
+    // Handle browser back/forward navigation
+    window.onpopstate = function(event){
+        var path = window.location.pathname.split('/').pop() || 'index';
+		var postId = window.location.pathname
+        if(!myArray.includes(path)){
+			var urlParts = postId.split('/');
+			//Find the Index of bellezza
+			var bellezzaIndex = urlParts.indexOf('bellezza');
+			
+			//Check if bellezza exists
+			if(bellezzaIndex !==-1){
+				//Get the Product nmae (next Part after "bellezza");
+				var initialPath = urlParts[bellezzaIndex + 1];
+				var productName = urlParts[bellezzaIndex + 2];
+				var productId = urlParts[bellezzaIndex + 3];
+			}
+			if(productId){
+				var page = productId;
+				var initialPath = initialPath;
+			}else{
+				var page = sessionStorage.getItem(initialPath);
+			}
+			if(pathMap[initialPath] == 'collections'){
+				loadContent(pathMap[initialPath], 0, 7, 1, page, '');
+			}else{
+				loadContent(pathMap[initialPath], 0, 7, 1, page, '');
+			}
+			myArray.push(initialPath);	
+		}
+    }
