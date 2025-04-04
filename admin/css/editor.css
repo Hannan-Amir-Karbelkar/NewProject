@@ -1,0 +1,130 @@
+body{
+	backgrond:red;
+	overflow-y:auto;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.toolbar {}
+.tool-list {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	padding: 0;
+	border-raduis: 10px;
+	
+}
+.tool {}
+.tool--btn {
+	display: block;
+	border: none;
+	font-size: 17px;
+}
+
+#output {
+	height: 250px; 
+	border:1px solid gray;
+	border-radius:5px;
+	//margin: 1rem;
+	//padding: 1rem;
+	resize: vertical;
+	overflow: auto;
+	color:#5e6165;
+	outline-radius:5px;
+	
+}
+input, button, select, optgroup, textarea {
+    margin: 1px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: #6e70ff;
+    color: white;
+}
+#output:focus, textarea{
+	outline:none!important;
+	outline:2px solid #a5a5e0!important;
+	border:none;
+}
+.active {
+	border: 1px solid red;
+}
+#PostModal{
+	height:100%;
+	z-index: 10000155;
+	display: non;
+	width: 100%;
+	position:fixed;
+	bottom: 0;
+	left: 0%;
+	margin-top: 0px;
+	overflow-x: hidden;
+	padding-top: 0px;
+	box-shadow: 0 4px 12px 0 rgb(0 0 0 / 40%);transition: 0.5s;
+}
+.fontSizeDropDown{
+	position:fixed;
+	background:white;
+	z-index:99999;
+	box-shadow: 0 4px 12px 0 rgb(0 0 0 / 40%);
+	margin-top:-50px;
+}
+.fontSizeDropDown div{
+	display:none;
+	padding:5px;
+	padding-left:20px;
+	padding-right:20px;
+	cursor:pointer;
+}
+.fontSizeDropDown div:hover{
+	background:orange;
+	color:#ffff;
+}
+
+
+.tags-container {
+    position: relative;
+}
+.tags-container span {
+    background-color: rgb(110 112 255);
+    color: white;
+    border: 2px solid rgb(99 100 194);
+    padding: 2px;
+	padding-bottom: 3px;
+    margin-top: 1px;
+    margin-left: 2px;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+.tags-container span i {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.del {
+    color: red;
+}
+#submit{
+	margin:10px;
+	width:100%;
+	color:white;
+	background: linear-gradient(to right, #6e70ff,#5558fd,#4e51f5);
+	margin-left: 0px;
+}
+.list{
+	padding-bottom: 5px;
+}
+.tagsCon{
+	margin-bottom:10px;
+}
+.toolbar{
+	overflow-x:auto;
+}

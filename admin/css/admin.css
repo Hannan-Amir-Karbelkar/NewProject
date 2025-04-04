@@ -1,0 +1,421 @@
+/*.adminPanelHeader{
+	position: fixed;
+    top: 0;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee0e0;
+    background: #fff;
+    transition: all 0.6s ease 0s;
+    display: flex;
+    margin: auto;
+    align-items: center;
+	color:grey;
+}
+.admin-logo{
+	margin: auto;
+	font-size: 25px;
+}
+.headerDropdown{
+	display:flex;
+	width: 60%;
+}
+.dropdownhead{
+	padding: 5px 20px;
+}
+.proLog{
+	display:flex;
+	width: 20%;
+	justify-content: space-evenly;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main_header {
+    height: 0px;
+    overflow: auto;
+    transition: 0.9s ease;
+    box-shadow: 2px -4px 12px 0 rgb(0 0 0 / 40%);
+}
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee0e0;
+    background: #fff;
+    transition: all 0.6s ease 0s;
+    align-items: center;
+}
+.brand-name {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: emoji;
+    color: rgb(198 162 91);
+}
+.header_option_container {
+    display: flex;
+    color: #808080;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 3px;
+}
+.header_option {
+    cursor: pointer;
+    font-size: 15px;
+    color: #808080;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-right: 15px;
+}
+.user_profile, .notification_bell, .search, .fund_section, .coin-bar {
+    padding-right: 10px;
+    margin-left: 20px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.fa-user-circle, .fa-search {
+    color: grey;
+}
+.prof_dropdown {
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 15%);
+    margin-left: -260px;
+    text-align: left;
+    margin-top: -50px;
+    font-size: 17px;
+    padding: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+    z-index: -1;
+}
+.pointer {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 8px solid transparent;
+    margin-top: -15px;
+    right: 10px;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #ebe7e7;
+}
+.AccountSetting {
+    padding: 10px;
+    line-height: 30px;
+    cursor: pointer;
+    color: grey;
+    font-size: 17px;
+    font-weight: 500;
+}
+.policies_dropdown a, .fund_dropdown a, .prof_dropdown a {
+    color: grey;
+    font-size: 15px;
+}
+.fund_dropdown {
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 15%);
+    margin-left: -260px;
+    text-align: left;
+    margin-top: -50px;
+    font-size: 17px;
+    padding: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+    z-index: -1;
+}
+.policies_dropdown {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 15%);
+    margin-left: -60px;
+    text-align: left;
+    margin-top: -50px;
+    font-size: 17px;
+    padding: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease;
+    z-index: -1;
+}
+.profile {
+    padding: 10px;
+    line-height: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.fa-search {
+    font-size: 19px;
+    color: grey;
+}
+.header_option:hover{
+	background: linear-gradient(to right, rgb(252, 96, 118), rgb(255, 146, 49));
+    color: #fff;
+}
+.fa-bell:hover, .fa-user-circle:hover{
+	color:rgb(252, 96, 118);
+}
+.list-group-item:hover{
+	background:#e4e4e4;
+}
+.drop:hover .prof_dropdown{
+	opacity: 1;
+    visibility: visible;
+	margin-top:5px;
+}
+.fund_section:hover .fund_dropdown{
+	opacity: 1;
+    visibility: visible;
+	margin-top:5px;
+}
+.drop:hover .policies_dropdown{
+	opacity: 1;
+    visibility: visible;
+	margin-top:5px;
+}
+.policies{
+	padding: 2px 6px;
+	line-height: 30px;
+	cursor:pointer;
+}
+.profile:hover, .policies:hover{
+    background: linear-gradient(to right, rgb(252, 96, 118), rgb(255, 146, 49));
+	color:white;
+}
+.dropdown-button {
+    padding: 15px 8px 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #7889af;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+	transition:0.3s ease;
+}
+.dropdown-button:hover{
+	background: rgb(198 162 91);
+	color:white;
+	border-right:5px solid grey;
+}
+.policies_dropdown{
+	position:absolute;
+	//width:300px;
+	background: #fff;
+    box-shadow: 0 6px 10px rgb(0 0 0 / 15%);
+	margin-left:-60px;
+	text-align:left;
+	margin-top:-50px;
+	font-size:17px;
+	padding:7px;
+	opacity: 0;
+    visibility: hidden;
+	transition: all 0.8s ease;
+	z-index:-1;
+}
+.drop:hover .policies_dropdown{
+	opacity: 1;
+    visibility: visible;
+	margin-top:5px;
+}
+a{
+	text-decoration: none;
+	color:#007bff;
+	font-size: 13px;
+}
+.profile{
+	padding:10px;
+	line-height: 5px;
+	cursor:pointer;
+	font-size:14px;
+}
+.fund_dropdown i{
+	    font-size: 16px;
+    padding-right: 5px;
+}
+
+
+/*** DASHBOARD SIDEBAR **/
+.dashboardSidebar{
+	background: white;
+    //
+	margin-top: 120px;
+	margin-top: 50px;
+	padding: 5px;
+	position: fixed;
+    //
+	margin-left: 50px;
+    //
+	width: 250px;
+	height: 100%;
+	width: 250px;
+	z-index: 1;
+	transition: 1.5s;
+	transition-property: left;
+	box-shadow: 0 4px 12px 0 rgb(0 0 0 / 40%);
+}
+.sideProNameCon{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.SideImgContainer{
+}
+.SideImgContainer img{
+	height:80px;
+	width:80px;
+	border-radius:50%;
+}
+.SideNameContainer{
+	width: 80%;
+	font-size: 13px;
+	text-align: center;
+}
+.adminSidebarContent ul {
+    list-style-type: none;
+	margin-top: 10px;
+}
+.dash {
+    margin-left: -20px;
+    padding: 10px; 
+    width:100%;
+    cursor:pointer;
+}
+nav ul li {
+    
+    //
+    opacity: 0.5;
+}
+.sidebar i {
+    padding-right: 10px;
+}
+.dash:hover{
+        background:orange;
+		color:#fff;
+}
+
+
+
+/*** SIDEBAR END ***/
+
+/** tHOUGHT **/
+/*#g {
+    //position: absolute;
+    background: linear-gradient(to right, gray, #ffad06);
+    margin-top: 50px;
+    width: 100%;
+    height: 210px;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.5);
+}
+#thought {
+    margin-top: 20px;
+    text-shadow: 2px 2px 30px 20px orange;
+	
+	background: linear-gradient(to right, gray, #ffad06);
+    margin-top: 50px;
+    width: 100%;
+    height: 210px;
+    box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.5);
+}
+#img {
+    height: 110px;
+    width: 20%;
+    margin-left: 80%;
+    margin-top: -20px;
+}
+.thoughtcontainer{
+    width: 55%;
+    right: 0;
+    position: absolute;
+}
+*/
+
+
+/*** Main Admin Pannel Chart **/
+.chartHeader{
+	font-size: 19px;
+    width: 100%;
+    background: orange;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+.chartBoxContainer{
+	transition:0.5s;cursor:pointer;display:flex;padding: 20;flex-wrap: wrap;flex-direction: column;align-content: flex-start;margin:1px;
+}
+.chartBoxContainer:hover{
+	transform:scale(1.1);
+}
+.chartBoxText{
+	font-size: 16;
+	font-weight: 700;
+	color:#5f6864;
+}
+.chartBoxNum{
+	font-size: 17px;
+    color: black;
+    font-weight: 600;
+}
+.chartBoxNum span{
+	font-size: 30;color:orange;
+}
