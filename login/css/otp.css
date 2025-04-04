@@ -1,0 +1,150 @@
+/*** OTP SECTION ***/
+.second_row {
+    padding: 0px; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+	font-family: emoji;
+}
+.opt_container{
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.code-container{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin: 10px 0;
+}
+.codes{
+	background: rgba(255, 255, 255, 0.6);
+	color: #3eb5ff;
+    border-radius: 10px;
+    border: 1px solid #5bbaff;
+    font-size: 20px;
+	height: 45px;
+    width: 40px;
+    margin: 10px;
+    text-align: center;
+    font-weight: 300;
+	outline: none;
+}
+.codes::-webkit-outer-spin-button,
+.codes::-webkit-inner-spin-button{
+	-webkit-appearance: none;
+}
+.codes:valid{
+	border-color: #0676d8;
+	transform: scale(1.1);
+}
+.btn{
+	display:inline-block;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	user-select:none;
+	cursor:pointer;
+	border: 1px solid transparent;
+	margin: 0px 0px 10px 0px;
+	padding: 7px 30px;
+    font-size: 0.9rem;
+	border-radius:10px;
+	text-transform:uppercase;
+	letter-spacing:0.7;
+}
+.btn-primary{
+	color: #fff;
+	background: #19b0ff;
+    border-color: #5bbaff;
+}
+.img_container{
+	min-height: 80px;
+}
+.countdown{
+	color: #11599b;
+	font-size:16px;
+	letter-spacing:2px;
+	font-weight:500;
+	min-height: 25px;
+}
+.imgMain{
+	display: flex;
+    justify-content: center;
+}
+.img_container img{
+	width: 90px;
+    vertical-align: middle;
+}
+.Otpheader{
+    margin: 5px 10px 20px 10px;
+	font-size:17px;
+}
+.backArrow{
+	position: absolute;
+    margin-top: -32px;
+    background: #5bbaff;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+	cursor:pointer;
+}
+.resendOtp{
+	cursor:pointer;
+}
+.blockedText{
+	font-family: emoji;
+	padding:10px;
+}
+.timeSpan{
+	font-weight: 600;
+    color: #1c8fff;
+}
+.okay{
+	color: #058fff;
+    text-align: right;
+    font-weight: 600;
+    font-family: emoji;
+	padding:10px;
+    cursor: pointer;
+}
+.loader{
+	display:none;
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9;
+    opacity: 0.9;
+}
+.loadingSpinner2{
+	top: 50%;
+    position: absolute;
+    font-size: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.opt_container p{
+	margin-bottom:20px;
+}
+@media (max-width: 768px){
+.backArrow{
+    padding: 10px;
+}
+.opt_container p{
+	font-size:13px;
+}
+}
+@media (max-width: 600px){
+	.code-container{
+		flex-wrap:wrap;
+	}
+	.codes{
+		font-size:17px;
+		height:35px;
+		width:30px;
+		font-size:bold;
+	}
+	.img_container img{
+		width: 70px;
+    }
+}
